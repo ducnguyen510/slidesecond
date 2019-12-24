@@ -22,21 +22,21 @@
 \end{frame}
 \begin{frame}[t]{Over View}
 \begin{enumerate}
-\item Introduce
+\item Introduction
 \item Floating-point Representation
 \item IEEE 754 floating-point standard for binary
 \item Floating-point Arithmetic
 \item Implementation in FPGA
 \end{enumerate}
 \end{frame}
-\begin{frame}[t]{1.Introduce}
+\begin{frame}[t]{1.Introduction}
 Why Floating-point?
 \begin{enumerate}
 \item Advantages
 \begin{itemize}
 \item Dynamic range\\
 with fixed-point $DR_{fxpt}=r^n-1$.\\
-with floating-point $DR_{flpt}=\frac{M_{max}*b^{E_max}}{M_{min}*b^{E_min}}$
+with floating-point $DR_{flpt}=\frac{M_{max}*b^{E_{max}}}{M_{min}*b^{E_{min}}}$
 \end{itemize}
 \item Disadvantages
 \begin{itemize}
@@ -81,7 +81,8 @@ with B
     \end{figure}
 \end{center}
 \end{frame}
-\begin{frame}[t]{3.IEEE 754 Floating-point Standard for binary}
+
+\begin{frame}[t]{3.IEEE 754 Standard for Binary Floating-point}
 The three basic format have bit lengts of 32,64 and 128 bits:
 \begin{center}
     \begin{figure}[htp]
@@ -134,7 +135,34 @@ IEEE 754 define some special value as NaN,Infinity to represent for underflow,ov
     \label{reffig25}
     \end{figure}
 \end{center}
-
+\end{frame}
+\begin{frame}[t]{Rounding Mode}
+IEEE 754 standard specifies four rounding modes
+\begin{enumerate}
+\item Round to nearest even
+\item Round toward plus infinity:result is rounded up
+\item Round toward minus infinity:result is rounded down
+\item Round toward zero:always truncate result
+\end{enumerate}
+\end{frame}
+\begin{frame}[t]{Round to Nearest Even(default rouding mode) }
+Normalized result has the form:$\textbf{1.}f_1f_2f_3...f_l\textbf{RS}$
+\begin{itemize}
+\item $f_l$:last fration bit.
+\item round bit\textbf{R}:appears after the last fraction bit $f_l$
+\item sticky bit \textbf{S}:is the OR of all remaining addtional bits.
+\end{itemize}
+Four cases for \textbf{RS}:
+\begin{itemize}
+\item \textbf{RS=00}:Result is exact,no need for rounding.
+\item \textbf{RS=01}:Truncate result by discarding \textbf{RS}
+\item \textbf{RS=11}:Increment result by add \textbf{1} to last fraction bit
+\item \textbf{RS=10}:Increment or Truncate depend on \textbf{$f_l$}\\
+      \begin{itemize}
+      \item \textbf{$f_l=0$}:truncate result
+      \item \textbf{$f_l=1$}:increment result
+      \end{itemize}
+\end{itemize}
 \end{frame}
 \begin{frame}[t]{3.Floating-point Arithmetic}
 Basic opreations for floating-point arithmetic:
@@ -148,7 +176,7 @@ Basic opreations for floating-point arithmetic:
     \end{figure}
 \end{center}
 \end{frame}
-\begin{frame}[t]{Addition and Subtration}
+\begin{frame}[t]{Addition and Subtration(1):Pseudocode}
     \begin{figure}[htp]
     \begin{center}
      \includegraphics[scale=.37]{image/pesucodeadd}
@@ -157,10 +185,189 @@ Basic opreations for floating-point arithmetic:
     \label{refpesucodeadd}
     \end{figure}
 \end{frame}
+
+\begin{frame}[t]{Addition and Subtraction(2):Table of result}
+\begin{itemize}
+\item Input:X($S_X,E_X,F_X$)và Y($S_Y,E_Y,F_Y$)
+\item Output:Z($S_Z,E_Z,F_Z$)
+\end{itemize}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.4]{image/fig7}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig7}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Addition and Subtraction(3):Adder Block Diagram}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.5]{image/fig6}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig6}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Multiplication(1):Pseudocode}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.36]{image/pesucodemul}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{refpesucodemul}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Multiplication(2):Multiply Block Diagram}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.3]{image/fig9}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig9}
+    \end{figure}
+\end{center}
+\end{frame}
 \begin{frame}[t]{4.Implementation in FPGA}
+The basic operations for floating-point arithmetic performed on FPGA are of type binary32 bit format and it is implemented on the FPGA VCU118-Virtex kit
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.5]{image/fig1}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig1}
+    \end{figure}
+\end{center}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.3]{image/fig31}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig31}
+    \end{figure}
+\end{center}
 
 \end{frame}
-\begin{frame}[t]{5.Conclusion}
+\begin{frame}[t]{Implement Addition(1):Unpackage process}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.33]{image/fig11}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig11}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Addition(2):Block and Flow-chart FSMD}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.35]{image/fig12}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig12}
+    \end{figure}
+\end{center}
+
+\end{frame}
+\begin{frame}[t]{Implement Addition(3):ASMD diagram}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.33]{image/asmdadd}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{refasmdadd}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Addition(4):Simulation result}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.26]{image/fig17}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig17}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Addition(5):Timing analysis}
+With Frequency clock:100MHz,period=10ns\\
+Critical Path :5.217ns(required time-arrival time)
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.5]{image/fig13}
+    \end{center}
+    %\caption{Cái sẽ hiển thị bên dưới hình}
+    \label{reffig13}
+    \end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}[t]{Implement Multiplication(1):Unpackage process}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.37]{image/fig15}
+    \end{center}
+    \label{reffig15}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Multiplication(2):Block and flow-chart FSMD}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.4]{image/fig14}
+    \end{center}
+    \label{reffig14}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Multiplication(3):ASMD diagram}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.37]{image/asmdmul}
+    \end{center}
+    \label{refasmdmul}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Multiplication(4):Simulation result}
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.25]{image/fig18}
+    \end{center}
+    \label{reffig18}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}[t]{Implement Multiplication(5):Timing analysis}
+With Frequency clock:100MHz,period=10ns\\
+Critical Path :5.029ns(required time-arrival time)
+\begin{center}
+    \begin{figure}[htp]
+    \begin{center}
+     \includegraphics[scale=.37]{image/fig16}
+    \end{center}
+    \label{reffig16}
+    \end{figure}
+\end{center}
+\end{frame}
+\begin{frame}{Conclusion}
 
 \end{frame}
 \end{document}

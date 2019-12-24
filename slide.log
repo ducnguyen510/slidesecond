@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.3)  24 DEC 2019 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.3)  24 DEC 2019 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,12 +993,12 @@ Overfull \hbox (9.267pt too wide) in paragraph at lines 83--83
 <image/fig20.png, id=56, 460.72125pt x 147.55125pt>
 File: image/fig20.png Graphic file (type png)
 <use image/fig20.png>
-Package pdftex.def Info: image/fig20.png  used on input line 107.
+Package pdftex.def Info: image/fig20.png  used on input line 108.
 (pdftex.def)             Requested size: 230.36006pt x 73.77544pt.
 <image/fig24.png, id=57, 312.41719pt x 41.4047pt>
 File: image/fig24.png Graphic file (type png)
 <use image/fig24.png>
-Package pdftex.def Info: image/fig24.png  used on input line 107.
+Package pdftex.def Info: image/fig24.png  used on input line 108.
 (pdftex.def)             Requested size: 218.69052pt x 28.98306pt.
  [6
 
@@ -1006,57 +1006,216 @@ Package pdftex.def Info: image/fig24.png  used on input line 107.
 <image/fig4.png, id=67, 564.60938pt x 315.42844pt>
 File: image/fig4.png Graphic file (type png)
 <use image/fig4.png>
-Package pdftex.def Info: image/fig4.png  used on input line 118.
+Package pdftex.def Info: image/fig4.png  used on input line 119.
 (pdftex.def)             Requested size: 282.30399pt x 157.71382pt.
  [7
 
  <./image/fig4.png>] [8
 
 ]
-<image/fig25.png, id=81, 635.21526pt x 308.85916pt>
+<image/fig25.png, id=81, 432.86719pt x 250.68657pt>
 File: image/fig25.png Graphic file (type png)
 <use image/fig25.png>
 Package pdftex.def Info: image/fig25.png  used on input line 138.
-(pdftex.def)             Requested size: 317.60684pt x 154.4292pt.
+(pdftex.def)             Requested size: 216.43306pt x 125.34297pt.
+ [9
 
-Overfull \hbox (10.31697pt too wide) in paragraph at lines 138--138
- [] 
- []
+ <./image/fig25.png>] [10
 
+] [11
 
-Overfull \vbox (11.91852pt too high) detected at line 138
- []
-
-[9
-
- <./image/fig25.png>]
-<image/fig26.png, id=89, 733.23938pt x 186.6975pt>
+]
+<image/fig26.png, id=99, 733.23938pt x 186.6975pt>
 File: image/fig26.png Graphic file (type png)
 <use image/fig26.png>
-Package pdftex.def Info: image/fig26.png  used on input line 150.
+Package pdftex.def Info: image/fig26.png  used on input line 178.
 (pdftex.def)             Requested size: 293.29056pt x 74.67767pt.
- [10
+ [12
 
  <./image/fig26.png>]
-<image/pesucodeadd.pdf, id=97, 844.65562pt x 596.98032pt>
+<image/pesucodeadd.pdf, id=107, 844.65562pt x 596.98032pt>
 File: image/pesucodeadd.pdf Graphic file (type pdf)
 <use image/pesucodeadd.pdf>
-Package pdftex.def Info: image/pesucodeadd.pdf  used on input line 159.
+Package pdftex.def Info: image/pesucodeadd.pdf  used on input line 187.
 (pdftex.def)             Requested size: 312.51768pt x 220.87926pt.
 
-Overfull \hbox (5.22781pt too wide) in paragraph at lines 159--159
+Overfull \hbox (5.22781pt too wide) in paragraph at lines 187--187
  [] 
  []
 
 
-Overfull \vbox (41.61372pt too high) detected at line 159
+Overfull \vbox (41.61372pt too high) detected at line 187
  []
 
-[11
+[13
 
- <./image/pesucodeadd.pdf>] [12
+ <./image/pesucodeadd.pdf>]
+<image/fig7.png, id=226, 699.6574pt x 280.57765pt>
+File: image/fig7.png Graphic file (type png)
+<use image/fig7.png>
+Package pdftex.def Info: image/fig7.png  used on input line 203.
+(pdftex.def)             Requested size: 279.85799pt x 112.22906pt.
+ [14
 
-] [13
+ <./image/fig7.png>]
+<image/fig6.png, id=234, 479.6822pt x 296.60812pt>
+File: image/fig6.png Graphic file (type png)
+<use image/fig6.png>
+Package pdftex.def Info: image/fig6.png  used on input line 214.
+(pdftex.def)             Requested size: 239.8405pt x 148.3037pt.
+ [15
+
+ <./image/fig6.png>]
+<image/pesucodemul.pdf, id=242, 844.65562pt x 596.98032pt>
+File: image/pesucodemul.pdf Graphic file (type pdf)
+<use image/pesucodemul.pdf>
+Package pdftex.def Info: image/pesucodemul.pdf  used on input line 225.
+(pdftex.def)             Requested size: 304.07579pt x 214.91275pt.
+
+Overfull \vbox (20.0073pt too high) detected at line 225
+ []
+
+[16
+
+ <./image/pesucodemul.pdf>]
+<image/fig9.png, id=364, 853.1875pt x 612.2875pt>
+File: image/fig9.png Graphic file (type png)
+<use image/fig9.png>
+Package pdftex.def Info: image/fig9.png  used on input line 236.
+(pdftex.def)             Requested size: 255.95822pt x 183.68767pt.
+ [17
+
+ <./image/fig9.png>]
+<image/fig1.png, id=373, 485.56406pt x 74.52844pt>
+File: image/fig1.png Graphic file (type png)
+<use image/fig1.png>
+Package pdftex.def Info: image/fig1.png  used on input line 258.
+(pdftex.def)             Requested size: 242.78143pt x 37.26411pt.
+<image/fig31.jpg, id=374, 501.875pt x 376.40625pt>
+File: image/fig31.jpg Graphic file (type jpg)
+<use image/fig31.jpg>
+Package pdftex.def Info: image/fig31.jpg  used on input line 258.
+(pdftex.def)             Requested size: 150.56366pt x 112.92273pt.
+
+Overfull \vbox (18.15117pt too high) detected at line 258
+ []
+
+[18
+
+ <./image/fig1.png> <./image/fig31.jpg>]
+<image/fig11.png, id=383, 959.08313pt x 374.14781pt>
+File: image/fig11.png Graphic file (type png)
+<use image/fig11.png>
+Package pdftex.def Info: image/fig11.png  used on input line 269.
+(pdftex.def)             Requested size: 316.49841pt x 123.46915pt.
+
+Overfull \hbox (9.20854pt too wide) in paragraph at lines 269--269
+ [] 
+ []
+
+[19
+
+ <./image/fig11.png>]
+<image/fig12.png, id=392, 794.2172pt x 443.40656pt>
+File: image/fig12.png Graphic file (type png)
+<use image/fig12.png>
+Package pdftex.def Info: image/fig12.png  used on input line 281.
+(pdftex.def)             Requested size: 277.98018pt x 155.19461pt.
+ [20
+
+ <./image/fig12.png>]
+<image/asmdadd.pdf, id=400, 1553.805pt x 614.295pt>
+File: image/asmdadd.pdf Graphic file (type pdf)
+<use image/asmdadd.pdf>
+Package pdftex.def Info: image/asmdadd.pdf  used on input line 292.
+(pdftex.def)             Requested size: 512.75723pt x 202.71797pt.
+
+Overfull \hbox (205.46736pt too wide) in paragraph at lines 292--292
+ [] 
+ []
+
+
+Overfull \vbox (23.45244pt too high) detected at line 292
+ []
+
+[21
+
+ <./image/asmdadd.pdf>]
+<image/fig17.png, id=665, 1220.30907pt x 683.55376pt>
+File: image/fig17.png Graphic file (type png)
+<use image/fig17.png>
+Package pdftex.def Info: image/fig17.png  used on input line 303.
+(pdftex.def)             Requested size: 317.27287pt x 177.71979pt.
+
+Overfull \hbox (9.983pt too wide) in paragraph at lines 303--303
+ [] 
+ []
+
+[22
+
+ <./image/fig17.png>]
+<image/fig13.png, id=673, 673.76718pt x 101.62968pt>
+File: image/fig13.png Graphic file (type png)
+<use image/fig13.png>
+Package pdftex.def Info: image/fig13.png  used on input line 316.
+(pdftex.def)             Requested size: 336.88277pt x 50.81471pt.
+
+Overfull \hbox (29.5929pt too wide) in paragraph at lines 316--316
+ [] 
+ []
+
+[23
+
+ <./image/fig13.png>]
+<image/fig15.png, id=681, 774.64406pt x 366.61969pt>
+File: image/fig15.png Graphic file (type png)
+<use image/fig15.png>
+Package pdftex.def Info: image/fig15.png  used on input line 327.
+(pdftex.def)             Requested size: 286.61382pt x 135.64716pt.
+ [24
+
+ <./image/fig15.png>]
+<image/fig14.png, id=689, 678.28406pt x 427.5975pt>
+File: image/fig14.png Graphic file (type png)
+<use image/fig14.png>
+Package pdftex.def Info: image/fig14.png  used on input line 337.
+(pdftex.def)             Requested size: 271.3088pt x 171.03596pt.
+ [25
+
+ <./image/fig14.png>]
+<image/asmdmul.pdf, id=698, 794.97pt x 614.295pt>
+File: image/asmdmul.pdf Graphic file (type pdf)
+<use image/asmdmul.pdf>
+Package pdftex.def Info: image/asmdmul.pdf  used on input line 347.
+(pdftex.def)             Requested size: 294.1343pt x 227.28558pt.
+
+Overfull \vbox (32.38013pt too high) detected at line 347
+ []
+
+[26
+
+ <./image/asmdmul.pdf>]
+<image/fig18.png, id=906, 1233.10687pt x 691.08188pt>
+File: image/fig18.png Graphic file (type png)
+<use image/fig18.png>
+Package pdftex.def Info: image/fig18.png  used on input line 357.
+(pdftex.def)             Requested size: 308.27596pt x 172.77003pt.
+
+Overfull \hbox (0.98608pt too wide) in paragraph at lines 357--357
+ [] 
+ []
+
+[27
+
+ <./image/fig18.png>]
+<image/fig16.png, id=915, 666.23906pt x 103.88812pt>
+File: image/fig16.png Graphic file (type png)
+<use image/fig16.png>
+Package pdftex.def Info: image/fig16.png  used on input line 369.
+(pdftex.def)             Requested size: 246.5046pt x 38.43799pt.
+ [28
+
+ <./image/fig16.png>] [29
 
 ]
 \tf@nav=\write6
@@ -1068,11 +1227,11 @@ Overfull \vbox (41.61372pt too high) detected at line 159
 \tf@snm=\write8
 \openout8 = `slide.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
  (./slide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
 Package rerunfilecheck Info: File `slide.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1081,11 +1240,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 20605 strings out of 494007
- 411613 string characters out of 6166146
- 477451 words of memory out of 5000000
- 23914 multiletter control sequences out of 15000+600000
- 17326 words of font info for 63 fonts, out of 8000000 for 9000
+ 20790 strings out of 494007
+ 414200 string characters out of 6166146
+ 477851 words of memory out of 5000000
+ 24034 multiletter control sequences out of 15000+600000
+ 18208 words of font info for 66 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
  71i,13n,95p,1828b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
@@ -1097,10 +1256,10 @@ lic/amsfonts/cm/cmssi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmssi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on slide.pdf (13 pages, 693601 bytes).
+Output written on slide.pdf (29 pages, 2037415 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 35 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 980 PDF objects out of 1000 (max. 8388607)
+ 870 compressed objects within 9 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
